@@ -5,9 +5,10 @@ package com.ksf.leetcode.easy;
  * @Date: 2020/10/10 16:12
  */
 
-import java.util.List;
 
 /**
+ * 两数相加
+ *
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
  * 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
  * <p>
@@ -19,7 +20,7 @@ import java.util.List;
  * 原因：342 + 465 = 807
  */
 
-public class No2_AddTwoNumbers {
+public class No2_两数相加 {
 
     public static void main(String[] args) {
         ListNode l1 = new ListNode(1);
@@ -31,6 +32,7 @@ public class No2_AddTwoNumbers {
 
         l1.next = l2;
         l2.next = l3;
+
         l4.next = l5;
         l5.next = l6;
 

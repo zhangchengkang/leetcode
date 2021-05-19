@@ -29,7 +29,7 @@ public class No5_最长回文子串 {
 
     /**
      * 暴力解法
-     * 时间复杂度：两层 for 循环 O(n²）O(n²），for 循环里边判断是否为回文 O(n）O(n），所以时间复杂度为 O(n³）O(n³）。
+     * 时间复杂度：两层 for 循环 O(n²），for循环里边判断是否为回文 O(n），所以时间复杂度为 O(n³）O(n³）。
      * 空间复杂度：O(1）O(1），常数个变量。
      */
     public static String solution1(String s) {
@@ -60,6 +60,9 @@ public class No5_最长回文子串 {
 
     /**
      * 中心扩散法
+     * 时间复杂度：O(n²） 空间复杂度：O(1）。
+     * 遍历字符 每次选择一个中心 进行左右扩散  判断左右字符是否相等即可
+     * 由于字符长度可能为偶数  我们需要从一个字符或者从两个字符中间扩散  所以总共有n+n-1个中心
      */
     public static String solution2(String s) {
         if (s == null || s.length() < 1) return "";

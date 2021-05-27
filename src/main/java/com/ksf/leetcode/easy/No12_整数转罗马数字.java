@@ -56,14 +56,4 @@ public class No12_整数转罗马数字 {
         return stringBuilder.toString();
     }
 
-    public static void main(String[] args) {
-        Integer c = Integer.valueOf(128);
-        Integer d = Integer.valueOf(128);
-        System.out.println(c.equals(d));
-    }
-
-
-
-
-
 }

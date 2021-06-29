@@ -37,6 +37,8 @@ public class No2_两数相加 {
         l5.next = l6;
 
         System.out.println(solution1(l1, l4));
+
+        System.out.println(No2_两数相加.class.getTypeName());
     }
 
     /**
